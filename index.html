@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,21 +15,10 @@
   </style>
 </head>
 <body>
-  <h1>🔮 I'm picking your tarot card for today...</h1>
-
+  <h1>I'm picking your tarot card for today...</h1>
   <script>
     const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-
-    const appUrl = "youtube://www.youtube.com/watch?v=" + randomVideo;
-    const webUrl = "https://www.youtube.com/shorts/" + randomVideo;
-
-    // 앱으로 먼저 시도
-    window.location.href = appUrl;
-
-    // 실패 시 웹으로 fallback
-    setTimeout(() => {
-      window.location.href = webUrl;
-    }, 2000);
+    window.location.href = "https://www.youtube.com/shorts/" + randomVideo;
   </script>
 </body>
 </html>
